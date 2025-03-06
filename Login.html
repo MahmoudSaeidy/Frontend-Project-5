@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+      <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+    <header>
+    <div class="container top-nav">
+        <a href="/index.html" class="logo"><img src="img/logo-black.png" alt=""></a>
+        <form action="" class = "search">
+            <input type="search" placeholder = "Search for products ...">
+            <button type = "submit">Search</button>
+        </form>
+        <div class="cart-header">
+            <div class="icon-cart">
+                <i onclick = "openCart()" class ="fa-solid fa-bag-shopping"></i>
+                <span class = "count-item">0</span>
+            </div>
+            <div class="total-price">
+                <p>My Cart : </p>
+                <div class="price_cart_Head">$0</div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <nav>
+        <div class="container">
+            <i onclick = "openMenu()" class = "fa-solid fa-bars bar-menu"></i>
+        <ul class = "links" id = "menu">
+            <i onclick = "closeMenu()" class = "fa-regular fa-circle-xmark btn-close-menu"></i>
+            <span onclick="closeMenu()" class = "bg-overlay"></span>
+            <img class = "logo-menu" src="img/logo-black.png" alt="">
+            <li onclick="window.document.location.href = '/index.html'"><a href="/index.html">Home</a></li>
+            <li onclick="window.document.location.href = '/all_products.html'" class = ""><a href="/All_Products.html">All Products</a></li>
+            <li onclick="window.document.location.href = '/about.html'"><a href="/about.html" class = "active">About us</a></li>
+            <li onclick="window.document.location.href = '/contactUS.html'"><a href="/contactUS.html">Contact</a></li>
+        </ul>
+        <div class="login-signup">
+            <a class="signup but" href = "/signup.html">SignUp <i class = "fa-solid fa-user-plus"></i></a>
+        </div>
+    </div>
+    </nav>
+    </header>
+    <div class="shopping-cart">
+        <div class="head-cart">
+            <h2>My Cart <span class = "title"> (0 item in cart)</span></h2>
+            <span class = "exitCat"><i onclick = "closeCart()" class = "fa-regular fa-circle-xmark"></i></span>
+        </div>
+        <hr>
+        <div class="cart-items">
+
+        </div>
+        <hr>
+        <div class="cart-bottom">
+            <p>Car Subtotal</p>
+            <span>--</span>
+        </div>
+        <div class="cart-button">
+            <span onclick="window.document.location.href = '/Checkout.html'" class = "active"><a href="/Checkout.html">proceed to checkout</a></span>
+            <span onclick="closeCart()">shop more</span>
+        </div>
+    </div>
+    <div class="login">
+        <div class="container-login">
+            <h2>Welcome back</h2>
+            <form action="">
+                <input type="email" placeholder="Enter Your Email">
+                <input type="text" placeholder="Enter Your Passowrd">
+            </form>
+            <a href="" class="forget-passowrd">Forget Passowrd ?</a>
+            <button class = "login-btn">Login</button>
+            <p class="signup">Don't have an account ? <a href="/signup.html">Sign Up</a></p>
+            <button class="login-Apple"><i class="fa-brands fa-apple"></i> <span>Login with Apple</span></button>
+            <button class="login-Google"><i class = "fa-brands fa-google"></i> <span>Login with Google</span></button>
+        </div>
+    </div>
+    <div class="back_to_top">
+        <p>Back to top</p>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="big_row">
+                <img src="img/logo-white.png" alt="">
+                <div class="hotline">
+                    <i class = "fa-solid fa-headset"></i>
+                    <div class="text">
+                        <h5>Hotline Free 24/24</h5>
+                        <h6>(+100) 123 456 7890</h6>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            </div>
+            <div class="row">
+                <h4>FAQs & Help</h4>
+                <div class="links">
+                    <a href="#">F.A.Qs</a>
+                    <a href="#">Ordering Tracking</a>
+                    <a href="#">Contacts</a>
+                    <a href="#">Events</a>
+                    <a href="#">Help Center</a>
+                </div>
+            </div>
+            <div class="row">
+                <h4>Shipping & Delivery</h4>
+                <div class="links">
+                    <a href="#">Delivery Information</a>
+                    <a href="#">Discount</a>
+                    <a href="#">Payment & shipping</a>
+                    <a href="#">Estimated Delivery Time</a>
+                    <a href="#">Shipping Guide</a>
+                </div>
+            </div>
+            <div class="row">
+                <h4>Infotmaton</h4>
+                <div class="links">
+                    <a href="#">Popular</a>
+                    <a href="#">Our Services</a>
+                    <a href="#">Your Account</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Condition</a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_footer">
+                <div class="container">
+                    <p>Copyright &copy; <span>Topico.</span> all rights reserved</p>
+                    <div class="payment_img">
+                        <img src="img/payment-1.png" alt="">
+                        <img src="img/payment-2.png" alt="">
+                        <img src="img/payment-3.png" alt="">
+                        <img src="img/payment-4.png" alt="">
+                    </div>
+                </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="JS/java.js"></script>
+    <script src="JS/swiper.js"></script>
+    <script src="JS/items_home.js"></script>
+    <script src="JS/All_products.js"></script>
+    
+</body>
+</html>
