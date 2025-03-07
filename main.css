@@ -1643,6 +1643,7 @@ header .links.active{
 .contact-Us .container .inputs textarea{
     border:2px solid #958b8b;
     border-radius: 10px;
+    padding:10px;
 }
 .btn-contact{
     padding: 15px;
