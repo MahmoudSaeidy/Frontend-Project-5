@@ -25,7 +25,7 @@ fetch("JS/items.json")
                     <img class="front-img" src="${element.img}" alt="">
                     <img class="back-img" src="${element.img_hover}" alt="">
                 </div>
-                <h3 onclick = "window.document.location.href = '/item.html'">${element.name}</h3>
+                <h3 onclick = "window.document.location.href = './item.html'">${element.name}</h3>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -57,7 +57,7 @@ fetch("JS/items.json")
                     <img class="front-img" src="${element.img}" alt="">
                     <img class="back-img" src="${element.img_hover}" alt="">
                 </div>
-                <h3 onclick = "window.document.location.href = '/item.html'">${element.name}</h3>
+                <h3 onclick = "window.document.location.href = './item.html'">${element.name}</h3>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -89,7 +89,7 @@ fetch("JS/items.json")
                     <img class="front-img" src="${element.img}" alt="">
                     <img class="back-img" src="${element.img_hover}" alt="">
                 </div>
-                <h3 onclick = "window.document.location.href = '/item.html'">${element.name}</h3>
+                <h3 onclick = "window.document.location.href = './item.html'">${element.name}</h3>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
